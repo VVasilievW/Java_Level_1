@@ -5,6 +5,7 @@ public class DZ_1 {
         printThreeWords();
         checkSumSign();
         printColor();
+        compareNumbers();
     }
 
     public static void printThreeWords() {
@@ -30,6 +31,15 @@ public class DZ_1 {
         }
         if (value > 100) {
             System.out.println("Зеленый");
+        }
+    }
+    public static void compareNumbers() {
+        int a = 15, b = 10;
+        if (a >= b){
+            System.out.println("a >= b");
+        }
+        if (a < b) {
+            System.out.println("a < b");
         }
     }
 
