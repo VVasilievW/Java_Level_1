@@ -1,7 +1,7 @@
 package Lesson_2;
 
 public class DZ_2 {
-    public static void main(String[] args) {
+    public static boolean main(String[] args) {
 
         public static boolean checkSumm (int a, int b) {
             int sum = a +b;
@@ -11,14 +11,20 @@ public class DZ_2 {
                 return false;
             }
         }
-        public static void chekNumber (int c1) {
+        public static void chekNumberPrint (int c1) {
             if (c1 < 0) {
                 System.out.println("Число отрицательное");
             } else {
-                System.out.println("Чмсло положительное");
+                System.out.println("Число положительное");
             }
         }
-
+        public static boolean chekNumberSign (int c2) {
+            if (c2 < 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
 
     }
 }
