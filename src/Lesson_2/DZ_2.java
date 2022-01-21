@@ -10,8 +10,15 @@ public class DZ_2 {
             } else {
                 return false;
             }
-
         }
+        public static void chekNumber (int c1) {
+            if (c1 < 0) {
+                System.out.println("Число отрицательное");
+            } else {
+                System.out.println("Чмсло положительное");
+            }
+        }
+
 
     }
 }
