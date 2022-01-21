@@ -25,6 +25,12 @@ public class DZ_2 {
                 return false;
             }
         }
+        public static void printTextNRaz (String txtToPrint, int n) {
+            for (int i = 0; i < n; i++) {
+                System.out.println(txtToPrint);
+            }
+
+        }
 
     }
 }
