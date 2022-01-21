@@ -11,14 +11,14 @@ public class DZ_2 {
                 return false;
             }
         }
-        public static void chekNumberPrint (int c1) {
+        public static void checkNumberPrint (int c1) {
             if (c1 < 0) {
                 System.out.println("Число отрицательное");
             } else {
                 System.out.println("Число положительное");
             }
         }
-        public static boolean chekNumberSign (int c2) {
+        public static boolean checkNumberSign (int c2) {
             if (c2 < 0) {
                 return true;
             } else {
@@ -30,6 +30,15 @@ public class DZ_2 {
                 System.out.println(txtToPrint);
             }
 
+        }
+        public static boolean checkYear (int year) {
+            if (year %4 == 0 || year %400 == 0 ) {
+                if (year %100 !=0) {
+                    return true;
+                }
+            } else {
+                return false;
+            }
         }
 
     }
