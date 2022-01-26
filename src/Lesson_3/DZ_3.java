@@ -7,6 +7,7 @@ public class DZ_3 {
     public static void main(String[] args) {
         invertMass();
         createArray100();
+        invertMass6();
     }
 
     //1. Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
@@ -24,11 +25,23 @@ public class DZ_3 {
     //2. Задать пустой целочисленный массив длиной 100. С помощью цикла заполнить его значениями 1 2 3 4 5 6 7 8 … 100;
 
     public static void createArray100() {
-        int [] arr2 = new int[100];
+        int[] arr2 = new int[100];
         for (int i = 0; i < arr2.length; i++) {
-            arr2[i] = i +1;
+            arr2[i] = i + 1;
         }
         System.out.println("2)\n" + Arrays.toString(arr2));
 
     }
+    //3. Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2;
+
+    public static void invertMass6() {
+        int[] arr3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        System.out.println("3)\n" + Arrays.toString(arr3));
+        for (int i = 0; i < arr3.length; i++) {
+            if (arr3[i] < 6)
+                arr3[i] *= 2;
+        }
+        System.out.println(Arrays.toString(arr3));
+    }
 }
+
