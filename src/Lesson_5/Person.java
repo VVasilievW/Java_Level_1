@@ -11,12 +11,12 @@ public class Person {
 
 
     public Person(String FIO, String position, String telephone, String email, int theSalary, int age) {
-        FIO = FIO;
-        position = position;
-        telephone = telephone;
-        email = email;
-        theSalary = theSalary;
-        age = age;
+        this.FIO = FIO;
+        this.position = position;
+        this.telephone = telephone;
+        this.email = email;
+        this.theSalary = theSalary;
+        this.age = age;
 
     }
     public void printPerson (){
